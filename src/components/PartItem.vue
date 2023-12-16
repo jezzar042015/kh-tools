@@ -2,11 +2,7 @@
     <div :class="[part.class ?? 'part-item', { active: part.active }]" @click="activatePart">
         <!-- icon -->
         <div class="icon" v-if="part.icon">
-            <!-- this worked on dev but not on gh-pages -->
-            <img :src="`@/assets/svg/${part.icon}`" alt="">
-            <!-- <img :src="require(`@/assets/svg/${part.icon}`).default" alt=""> -->
-            <!-- <img :src="resolve(`@/assets/svg/${part.icon}`).default" alt=""> -->
-            <!-- <img :src="`${import.meta.env.BASE_URL}src/assets/svg/${part.icon}`" alt=""> -->
+            <img :src="getImageUrl(part.icon)" alt="">
         </div>
         <!-- label -->
         <div class="details">
@@ -71,6 +67,9 @@ export default {
                 this.setTimerSeconds(this.part.consumed)
                 this.selectPart(this.part.id);
             }
+        },
+        getImageUrl(name) {
+            return new URL(`../assets/svg/${name}`, import.meta.url).href
         }
     },
     inject: [

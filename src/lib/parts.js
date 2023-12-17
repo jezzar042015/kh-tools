@@ -6,23 +6,15 @@ const wt = [
         timed: true,
         class: null,
         limit: 30,
-        participant: 'J. Segovia'
+        participant: 'J. Dy'
     },
     {
         id: 20,
         part: 'Watchtower Study',
         timed: true,
         class: null,
-        limit: 30,
+        limit: 55,
         participant: 'J. Tan'
-    },
-    {
-        id: 30,
-        part: 'Last Service Talk',
-        timed: true,
-        class: null,
-        limit: 30,
-        participant: 'J. Segovia'
     },
 ]
 

@@ -35,27 +35,27 @@ const mwb =  [
     },
     {
         id: 21,
-        part: `“Do You Have a Reputation Like Job’s?”`,
-        timed: true,
-        class: null,
-        limit: 10,
-        participant: 'J. Tan'
-    },
-    {
-        id: 30,
-        part: 'Spiritual Gems — Job 28-29',
+        part: `“How Job Remained Chaste”`,
         timed: true,
         class: null,
         limit: 10,
         participant: 'M. Waniwan'
     },
     {
+        id: 30,
+        part: 'Spiritual Gems — Job 30-31',
+        timed: true,
+        class: null,
+        limit: 10,
+        participant: 'K. Dagalea'
+    },
+    {
         id: 40,
-        part: 'Bible Reading — Job 28:1-17',
+        part: 'Bible Reading — Job 31:15-36',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'N. Regala III'
+        participant: 'R. Calutan'
     },
     {
         id: 50,
@@ -77,7 +77,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 3,
-        participant: 'CH Cuizon & E. Barca'
+        participant: 'M. Calutan & Z. Tan '
     },
     {
         id: 70,
@@ -92,7 +92,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 4,
-        participant: 'M. Dy & R. Balleres'
+        participant: 'N. Baldesco & M. Olarte',
     },
     {
         id: 90,
@@ -103,11 +103,11 @@ const mwb =  [
     },
     {
         id: 95,
-        part: 'Bible Study',
+        part: 'Talk',
         timed: true,
         class: null,
         limit: 5,
-        participant: 'JC Cuizon & C. Waniwan'
+        participant: 'A. Balleres'
     },
     {
         id: 96,
@@ -125,11 +125,19 @@ const mwb =  [
     },
     {
         id: 110,
-        part: '“My Contribution to Our Good Reputation”',
+        part: '“Why Pornography Is Bad”',
         timed: true,
         class: null,
-        limit: 15,
+        limit: 7,
         participant: 'J. Dy'
+    },
+    {
+        id: 111,
+        part: 'Local Needs',
+        timed: true,
+        class: null,
+        limit: 8,
+        participant: 'M. Waniwan'
     },
     {
         id: 120,
@@ -137,7 +145,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 25,
-        participant: 'K. Dagalea'
+        participant: 'J. Tan'
     },
     {
         id: 140,
@@ -150,8 +158,7 @@ const mwb =  [
         id: 150,
         part: 'Closing Prayer',
         timed: false,
-        participant: 'J. Dy'
-
+        participant: 'M. Waniwan',
     },
 ]
 

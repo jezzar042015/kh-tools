@@ -6,7 +6,7 @@ const wt = [
         timed: true,
         class: null,
         limit: 30,
-        participant: 'J. Dy'
+        participant: 'J. Tan'
     },
     {
         id: 20,
@@ -14,7 +14,7 @@ const wt = [
         timed: true,
         class: null,
         limit: 55,
-        participant: 'J. Tan'
+        participant: 'M. Waniwan'
     },
 ]
 
@@ -35,15 +35,15 @@ const mwb =  [
     },
     {
         id: 21,
-        part: `“How Job Remained Chaste”`,
+        part: `Why You Can Trust God’s Promise of Everlasting Life`,
         timed: true,
         class: null,
         limit: 10,
-        participant: 'M. Waniwan'
+        participant: 'J. Dy'
     },
     {
         id: 30,
-        part: 'Spiritual Gems — Job 30-31',
+        part: 'Spiritual Gems — Job 36-37',
         timed: true,
         class: null,
         limit: 10,
@@ -51,11 +51,11 @@ const mwb =  [
     },
     {
         id: 40,
-        part: 'Bible Reading — Job 31:15-36',
+        part: 'Bible Reading — Job 36:1-21',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'R. Calutan'
+        participant: 'A. Balleres'
     },
     {
         id: 50,
@@ -73,11 +73,11 @@ const mwb =  [
     },
     {
         id: 61,
-        part: 'First Conversation',
+        part: 'Starting a Conversation',
         timed: true,
         class: null,
         limit: 3,
-        participant: 'M. Calutan & Z. Tan '
+        participant: 'G. Cuizon & M. Calutan'
     },
     {
         id: 70,
@@ -88,11 +88,11 @@ const mwb =  [
     },
     {
         id: 80,
-        part: 'Return Visit',
+        part: 'Following Up',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'N. Baldesco & M. Olarte',
+        participant: 'C. Cuizon & R. Balleres',
     },
     {
         id: 90,
@@ -103,11 +103,11 @@ const mwb =  [
     },
     {
         id: 95,
-        part: 'Talk',
+        part: 'Explaining Your Beliefs',
         timed: true,
         class: null,
         limit: 5,
-        participant: 'A. Balleres'
+        participant: 'N. Regala III'
     },
     {
         id: 96,
@@ -125,20 +125,20 @@ const mwb =  [
     },
     {
         id: 110,
-        part: '“Why Pornography Is Bad”',
+        part: 'Be Prepared for Situations That Require Medical or Surgical Care',
         timed: true,
         class: null,
-        limit: 7,
-        participant: 'J. Dy'
-    },
-    {
-        id: 111,
-        part: 'Local Needs',
-        timed: true,
-        class: null,
-        limit: 8,
+        limit: 15,
         participant: 'M. Waniwan'
     },
+    // {
+    //     id: 111,
+    //     part: 'Local Needs',
+    //     timed: true,
+    //     class: null,
+    //     limit: 8,
+    //     participant: 'M. Waniwan'
+    // },
     {
         id: 120,
         part: 'Congregation Bible Study',

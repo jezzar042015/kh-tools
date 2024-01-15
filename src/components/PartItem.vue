@@ -106,6 +106,7 @@ export default {
 .partname
 {
     font-weight: 500;
+    max-width: 300px;
 }
 
 .participant

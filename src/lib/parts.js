@@ -2,11 +2,11 @@
 const wt = [
     {
         id: 10,
-        part: 'Public Talk',
+        part: 'Special Talk',
         timed: true,
         class: null,
         limit: 30,
-        participant: 'J. Tan'
+        participant: 'K. Dagalea'
     },
     {
         id: 20,
@@ -14,7 +14,7 @@ const wt = [
         timed: true,
         class: null,
         limit: 55,
-        participant: 'M. Waniwan'
+        participant: 'J. Tan'
     },
 ]
 
@@ -35,27 +35,27 @@ const mwb =  [
     },
     {
         id: 21,
-        part: `Why You Can Trust God’s Promise of Everlasting Life`,
-        timed: true,
-        class: null,
-        limit: 10,
-        participant: 'J. Dy'
-    },
-    {
-        id: 30,
-        part: 'Spiritual Gems — Job 36-37',
+        part: `Aspects of Jesus’ Death Foretold`,
         timed: true,
         class: null,
         limit: 10,
         participant: 'K. Dagalea'
     },
     {
+        id: 30,
+        part: 'Spiritual Gems — Ps 22',
+        timed: true,
+        class: null,
+        limit: 10,
+        participant: 'J. Dy'
+    },
+    {
         id: 40,
-        part: 'Bible Reading — Job 36:1-21',
+        part: 'Bible Reading — Ps 22:1-16',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'A. Balleres'
+        participant: 'R. Calutan'
     },
     {
         id: 50,
@@ -77,7 +77,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 3,
-        participant: 'G. Cuizon & M. Calutan'
+        participant: 'M. Olarte & R. Balleres'
     },
     {
         id: 70,
@@ -88,11 +88,11 @@ const mwb =  [
     },
     {
         id: 80,
-        part: 'Following Up',
+        part: 'Starting a Conversation',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'C. Cuizon & R. Balleres',
+        participant: 'Z. Tan & G Cuizon',
     },
     {
         id: 90,
@@ -103,11 +103,11 @@ const mwb =  [
     },
     {
         id: 95,
-        part: 'Explaining Your Beliefs',
+        part: 'Talk',
         timed: true,
         class: null,
         limit: 5,
-        participant: 'N. Regala III'
+        participant: 'A. Balleres'
     },
     {
         id: 96,
@@ -116,6 +116,21 @@ const mwb =  [
         class: null,
         limit: 1,
     },
+    // {
+    //     id: 97,
+    //     part: 'Making Disciples',
+    //     timed: true,
+    //     class: null,
+    //     limit: 5,
+    //     participant: 'A. Balleres & R. Berbes'
+    // },
+    // {
+    //     id: 98,
+    //     part: `Chairman's Comments`,
+    //     timed: true,
+    //     class: null,
+    //     limit: 1,
+    // },
     {
         id: 100,
         part: 'Living',
@@ -125,19 +140,19 @@ const mwb =  [
     },
     {
         id: 110,
-        part: 'Be Prepared for Situations That Require Medical or Surgical Care',
+        part: 'Local Needs',
         timed: true,
         class: null,
-        limit: 15,
-        participant: 'M. Waniwan'
+        limit: 20,
+        participant: 'J. Tan'
     },
     // {
     //     id: 111,
-    //     part: 'Local Needs',
+    //     part: 'Organizational Accomplishments for March',
     //     timed: true,
     //     class: null,
-    //     limit: 8,
-    //     participant: 'M. Waniwan'
+    //     limit: 10,
+    //     participant: 'J. Dy'
     // },
     {
         id: 120,
@@ -145,7 +160,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 25,
-        participant: 'J. Tan'
+        participant: 'M. Waniwan'
     },
     {
         id: 140,

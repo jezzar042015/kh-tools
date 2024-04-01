@@ -199,7 +199,7 @@ export default {
         }
 
         stopWatcher()
-      }, 3000)
+      }, 500)
 
     },
     alertsWatcher(interval) {

@@ -211,6 +211,7 @@ export default {
     color: rgb(44, 42, 42);
     cursor: pointer;
     font-weight: 500;
+    transition: ease .3s;
 }
 
 .actions button:hover

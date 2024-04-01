@@ -2,11 +2,11 @@
 const wt = [
     {
         id: 10,
-        part: 'Special Talk',
+        part: 'Public Talk',
         timed: true,
         class: null,
         limit: 30,
-        participant: 'K. Dagalea'
+        participant: 'A. Balleres'
     },
     {
         id: 20,
@@ -35,27 +35,27 @@ const mwb =  [
     },
     {
         id: 21,
-        part: `Aspects of Jesus’ Death Foretold`,
+        part: `"Jehovah Is My Shepherd"`,
         timed: true,
         class: null,
         limit: 10,
-        participant: 'K. Dagalea'
+        participant: 'J. Tan'
     },
     {
         id: 30,
-        part: 'Spiritual Gems — Ps 22',
+        part: 'Spiritual Gems — Ps 23-25',
         timed: true,
         class: null,
         limit: 10,
-        participant: 'J. Dy'
+        participant: 'A. Balleres'
     },
     {
         id: 40,
-        part: 'Bible Reading — Ps 22:1-16',
+        part: 'Bible Reading — Ps 24:1-10',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'R. Calutan'
+        participant: 'E. Redona'
     },
     {
         id: 50,
@@ -77,7 +77,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 3,
-        participant: 'M. Olarte & R. Balleres'
+        participant: 'M. Alibadbad & CH Cuizon'
     },
     {
         id: 70,
@@ -92,7 +92,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 4,
-        participant: 'Z. Tan & G Cuizon',
+        participant: 'N. Baldesco & R. Balleres',
     },
     {
         id: 90,
@@ -103,11 +103,11 @@ const mwb =  [
     },
     {
         id: 95,
-        part: 'Talk',
+        part: 'Making Disciples',
         timed: true,
         class: null,
         limit: 5,
-        participant: 'A. Balleres'
+        participant: 'B. Dagalea & EJ Borer'
     },
     {
         id: 96,
@@ -140,11 +140,11 @@ const mwb =  [
     },
     {
         id: 110,
-        part: 'Local Needs',
+        part: 'We Reject the Voice of Strangers',
         timed: true,
         class: null,
-        limit: 20,
-        participant: 'J. Tan'
+        limit: 15,
+        participant: 'M. Waniwan'
     },
     // {
     //     id: 111,
@@ -160,7 +160,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 25,
-        participant: 'M. Waniwan'
+        participant: 'J. Dy'
     },
     {
         id: 140,
@@ -173,7 +173,7 @@ const mwb =  [
         id: 150,
         part: 'Closing Prayer',
         timed: false,
-        participant: 'M. Waniwan',
+        participant: 'J. Dy',
     },
 ]
 

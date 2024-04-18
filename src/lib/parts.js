@@ -6,7 +6,7 @@ const wt = [
         timed: true,
         class: null,
         limit: 30,
-        participant: 'A. Balleres'
+        participant: 'K. Dagalea'
     },
     {
         id: 20,
@@ -35,27 +35,27 @@ const mwb =  [
     },
     {
         id: 21,
-        part: `"Jehovah Is My Shepherd"`,
+        part: `Descipline an Expression of God's Love`,
         timed: true,
         class: null,
         limit: 10,
-        participant: 'J. Tan'
+        participant: 'A Balleres'
     },
     {
         id: 30,
-        part: 'Spiritual Gems — Ps 23-25',
+        part: 'Spiritual Gems — Ps 29-31',
         timed: true,
         class: null,
         limit: 10,
-        participant: 'A. Balleres'
+        participant: 'M Waniwan'
     },
     {
         id: 40,
-        part: 'Bible Reading — Ps 24:1-10',
+        part: 'Bible Reading — Ps 31:1-14',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'E. Redona'
+        participant: 'R Berbes'
     },
     {
         id: 50,
@@ -76,8 +76,8 @@ const mwb =  [
         part: 'Starting a Conversation',
         timed: true,
         class: null,
-        limit: 3,
-        participant: 'M. Alibadbad & CH Cuizon'
+        limit: 1,
+        participant: 'E Barca & R Balleres'
     },
     {
         id: 70,
@@ -91,8 +91,8 @@ const mwb =  [
         part: 'Starting a Conversation',
         timed: true,
         class: null,
-        limit: 4,
-        participant: 'N. Baldesco & R. Balleres',
+        limit: 3,
+        participant: 'M Dy & M Calutan',
     },
     {
         id: 90,
@@ -103,11 +103,11 @@ const mwb =  [
     },
     {
         id: 95,
-        part: 'Making Disciples',
+        part: 'Following Up',
         timed: true,
         class: null,
-        limit: 5,
-        participant: 'B. Dagalea & EJ Borer'
+        limit: 3,
+        participant: 'J Caandoy & C Waniwan'
     },
     {
         id: 96,
@@ -116,21 +116,21 @@ const mwb =  [
         class: null,
         limit: 1,
     },
-    // {
-    //     id: 97,
-    //     part: 'Making Disciples',
-    //     timed: true,
-    //     class: null,
-    //     limit: 5,
-    //     participant: 'A. Balleres & R. Berbes'
-    // },
-    // {
-    //     id: 98,
-    //     part: `Chairman's Comments`,
-    //     timed: true,
-    //     class: null,
-    //     limit: 1,
-    // },
+    {
+        id: 97,
+        part: 'Making Disciples',
+        timed: true,
+        class: null,
+        limit: 4,
+        participant: 'JC Cuizon & Z Tan'
+    },
+    {
+        id: 98,
+        part: `Chairman's Comments`,
+        timed: true,
+        class: null,
+        limit: 1,
+    },
     {
         id: 100,
         part: 'Living',
@@ -140,27 +140,27 @@ const mwb =  [
     },
     {
         id: 110,
-        part: 'We Reject the Voice of Strangers',
+        part: 'Why We Have Faith in ... God\'s Love',
         timed: true,
         class: null,
-        limit: 15,
-        participant: 'M. Waniwan'
+        limit: 7,
+        participant: 'M Waniwan'
     },
-    // {
-    //     id: 111,
-    //     part: 'Organizational Accomplishments for March',
-    //     timed: true,
-    //     class: null,
-    //     limit: 10,
-    //     participant: 'J. Dy'
-    // },
+    {
+        id: 111,
+        part: '2024 Update on the Local Design/​Construction Program',
+        timed: true,
+        class: null,
+        limit: 8,
+        participant: 'J Tan'
+    },
     {
         id: 120,
         part: 'Congregation Bible Study',
         timed: true,
         class: null,
         limit: 25,
-        participant: 'J. Dy'
+        participant: 'K Dagalea'
     },
     {
         id: 140,
@@ -173,7 +173,7 @@ const mwb =  [
         id: 150,
         part: 'Closing Prayer',
         timed: false,
-        participant: 'J. Dy',
+        participant: 'J Tan',
     },
 ]
 

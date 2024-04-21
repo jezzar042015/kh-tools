@@ -66,6 +66,7 @@ export default {
     {
         top: 300px;
         height: calc(100dvh - 300px);
+        min-width: 0;
     }
 }
 </style>

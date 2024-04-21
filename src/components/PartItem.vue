@@ -127,6 +127,7 @@ export default {
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: ease-in-out .3s;
 }
 
 .active

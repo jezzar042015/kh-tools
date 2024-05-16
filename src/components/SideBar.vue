@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import PartItem from './PartItem.vue';
+import PartItem from './ZPartItem.vue';
 export default {
     name: 'SideBar',
     components: {

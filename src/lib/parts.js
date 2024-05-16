@@ -6,7 +6,7 @@ const wt = [
         timed: true,
         class: null,
         limit: 30,
-        participant: 'J Dy'
+        participant: 'J Tan'
     },
     {
         id: 20,
@@ -14,7 +14,7 @@ const wt = [
         timed: true,
         class: null,
         limit: 55,
-        participant: 'J Tan'
+        participant: 'J Dy'
     },
 ]
 
@@ -35,27 +35,27 @@ const mwb =  [
     },
     {
         id: 21,
-        part: `Why Confess a Serious Sin?`,
+        part: `Shedding the Burden of Excessive Guilt`,
+        timed: true,
+        class: null,
+        limit: 10,
+        participant: 'M Waniwan'
+    },
+    {
+        id: 30,
+        part: 'Spiritual Gems — Ps 38-39',
         timed: true,
         class: null,
         limit: 10,
         participant: 'J Tan'
     },
     {
-        id: 30,
-        part: 'Spiritual Gems — Ps 32-33',
-        timed: true,
-        class: null,
-        limit: 10,
-        participant: 'K Dagalea'
-    },
-    {
         id: 40,
-        part: 'Bible Reading — Ps 33:1-16',
+        part: 'Bible Reading — Ps 38:1-19',
         timed: true,
         class: null,
         limit: 4,
-        participant: 'R Calutan'
+        participant: 'R Berbes'
     },
     {
         id: 50,
@@ -73,7 +73,7 @@ const mwb =  [
     },
     {
         id: 61,
-        part: 'Humility — What Paul Did',
+        part: 'Tact - What Paul Did',
         timed: true,
         class: null,
         limit: 7,
@@ -88,7 +88,7 @@ const mwb =  [
     // },
     {
         id: 80,
-        part: 'Humility — Imitate Paul',
+        part: 'Tact - Imitate Paul',
         timed: true,
         class: null,
         limit: 8,
@@ -103,11 +103,11 @@ const mwb =  [
     // },
     // {
     //     id: 95,
-    //     part: 'Following Up',
+    //     part: 'Talk',
     //     timed: true,
     //     class: null,
-    //     limit: 3,
-    //     participant: 'J Caandoy & C Waniwan'
+    //     limit: 5,
+    //     participant: 'N Regala III'
     // },
     // {
     //     id: 96,
@@ -140,11 +140,11 @@ const mwb =  [
     },
     {
         id: 110,
-        part: 'Local Needs',
+        part: '2024 Governing Body Update #3',
         timed: true,
         class: null,
         limit: 15,
-        participant: 'J Dy'
+        participant: 'J Tan'
     },
     // {
     //     id: 111,
@@ -160,7 +160,7 @@ const mwb =  [
         timed: true,
         class: null,
         limit: 25,
-        participant: 'M Waniwan'
+        participant: 'J Dy'
     },
     {
         id: 140,
@@ -173,7 +173,7 @@ const mwb =  [
         id: 150,
         part: 'Closing Prayer',
         timed: false,
-        participant: 'M Waniwan',
+        participant: 'J Dy',
     },
 ]
 

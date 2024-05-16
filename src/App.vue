@@ -257,30 +257,3 @@ export default {
 }
 </script>
 
-<style>
-#app
-{
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-#main
-{
-  height: 100%;
-  width: 100%;
-  background: #0f0f0f;
-}
-
-.fade-enter-active,
-.fade-leave-active
-{
-  transition: opacity 0.5s;
-}
-
-.fade-enter,
-.fade-leave-to
-{
-  opacity: 0;
-}
-</style>

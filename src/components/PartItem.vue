@@ -1,20 +1,20 @@
 <template>
-    <div :class="[part.class ?? 'part-item', { active: part.active }]" @click="activatePart">
+    <div :class="[props.part.class ?? 'part-item', { active: props.part.active }]" @click="activatePart">
         <!-- icon -->
-        <div class="icon" v-if="part.icon">
-            <img :src="getImageUrl(part.icon)" alt="">
+        <div class="icon" v-if="props.part.icon">
+            <img :src="getImageUrl(props.part.icon)" alt="">
         </div>
         <!-- label -->
         <div class="details">
             <div class="label">
-                <div class="partname">{{ part.part }}</div>
+                <div class="partname">{{ props.part.part }}</div>
                 <div>{{ getDuration }}</div>
             </div>
             <div class="label">
                 <div class="participant">
-                    {{ part.participant }}
+                    {{ props.part.participant }}
                 </div>
-                <div class="remark" v-if="part.timed">
+                <div class="remark" v-if="props.part.timed">
                     <div :class="['remark-icon', setRemarksType]">
                         <div>
                             {{ displayRemarksTs }}
@@ -29,181 +29,53 @@
     </div>
 </template>
 
-<script>
-export default {
-    props: {
-        part: Object
-    },
-    computed: {
-        getDuration() {
-            return this.part.limit ? this.part.limit + 'm' : ''
-        },
-        setRemarksType() {
-            if (!this.part.consumed || this.part.consumed == 0) {
-                return null
-            } else {
-                return (this.part.consumed > (this.part.limit * 60)) ? 'over' : 'under'
-            }
-        },
-        displayRemarksTs() {
-            if (this.part.consumed && this.part.consumed > 0) {
-                let diff = Math.abs(this.part.consumed - (this.part.limit * 60))
+<script setup>
+    import { computed, inject } from 'vue';
 
-                const minutes = Math.floor(diff / 60);
-                const remainingSeconds = Math.round(diff % 60);
+    const props = defineProps({
+        part: { type: Object, required: true }
+    });
 
-                const minutesString = minutes > 0 ? `${minutes}m` : '';
-                const secondsString = `${remainingSeconds}s`;
+    const getDuration = computed(() => {
+        return props.part.limit ? props.part.limit + 'm' : '';
+    });
 
-                return `${minutesString} ${secondsString}`;
-            } else {
-                return null
-            }
+    const setRemarksType = computed(() => {
+        if (!props.part.consumed || props.part.consumed == 0) {
+            return null;
+        } else {
+            return (props.part.consumed > (props.part.limit * 60))
+                ? 'over' : 'under';
         }
-    },
-    methods: {
-        activatePart() {
-            if (this.part.timed) {
-                this.setTimerSeconds(this.part.consumed)
-                this.selectPart(this.part.id);
-            }
-        },
-        getImageUrl(name) {
-            return new URL(`../assets/svg/${name}`, import.meta.url).href
+    });
+
+    const displayRemarksTs = computed(() => {
+        if (props.part.consumed && props.part.consumed > 0) {
+            let diff = Math.abs(props.part.consumed - (props.part.limit * 60))
+
+            const minutes = Math.floor(diff / 60);
+            const remainingSeconds = Math.round(diff % 60);
+
+            const minutesString = minutes > 0 ? `${minutes}m` : '';
+            const secondsString = `${remainingSeconds}s`;
+
+            return `${minutesString} ${secondsString}`;
+        } else {
+            return null;
         }
-    },
-    inject: [
-        'setTimerSeconds', 'selectPart'
-    ]
-}
-</script>
+    })
 
-<style scoped>
-.icon
-{
-    height: 100%;
-    width: 30px;
-    display: flex;
-    align-items: center;
-}
+    const setTimerSeconds = inject('setTimerSeconds');
+    const selectPart = inject('selectPart');
 
-.details
-{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    gap: 3px;
-}
-
-.label
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.partname
-{
-    font-weight: 500;
-    max-width: 300px;
-}
-
-.participant
-{
-    font-size: 12px;
-}
-
-.part-item
-{
-    padding: 20px 15px;
-    background: transparent;
-    width: 100%;
-    height: fit-content;
-    color: white;
-    font-weight: 300;
-    font-size: 14px;
-
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-}
-
-.active
-{
-    background: #ffffff1e;
-}
-
-.part-item:hover
-{
-    background: #ffffff1e;
-}
-
-.mwb-treasures,
-.mwb-ministry,
-.mwb-living
-{
-    padding: 5px 15px;
-    width: 100%;
-    min-height: 50px;
-    color: white;
-    font-weight: 500;
-    font-size: 14px;
-
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.mwb-treasures
-{
-    background: #808080;
-}
-
-.mwb-ministry
-{
-    background: #ffa500;
-}
-
-.mwb-living
-{
-    background: #99131E;
-}
-
-.remark
-{
-    display: flex;
-    align-items: center;
-    padding: 3px 0;
-    gap: 4px;
-    font-size: 12px;
-}
-
-.remark-icon
-{
-    padding: 2px 10px;
-    height: fit-content;
-    width: fit-content;
-    border-radius: 10px;
-}
-
-.over
-{
-    background: #ec4754;
-}
-
-.under
-{
-    background: rgb(0, 190, 0);
-    color: black;
-}
-
-@media screen and (max-width: 767px)
-{
-    .details
-    {
-        user-select: none;
+    function activatePart() {
+        if (props.part.timed) {
+            setTimerSeconds(props.part.consumed);
+            selectPart(props.part.id);
+        }
     }
-}
-</style>
+
+    function getImageUrl(name) {
+        return new URL(`../assets/svg/${name}`, import.meta.url).href
+    }
+</script>

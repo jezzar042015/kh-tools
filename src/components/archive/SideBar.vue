@@ -17,18 +17,32 @@
                     <div>Public Meeting</div>
                 </div>
             </div>
-            <template v-for="part in props.parts" :key="part.id">
+            <template v-for="part in parts" :key="part.id">
                 <PartItem :part="part"></PartItem>
             </template>
         </div>
     </div>
 </template>
 
-<script setup>
-    import PartItem from './PartItem.vue';
+<script>
+import PartItem from './PartItem.vue';
+export default {
+    name: 'SideBar',
+    components: {
+        PartItem
+    },
+    props: {
+        parts: Array,
+        activeMeeting: String
+    },
+    computed: {
 
-    const props = defineProps({
-        parts: { type: Array },
-        activeMeeting: { type: String }
-    });
+    },
+    methods: {
+
+    },
+
+}
 </script>
+
+

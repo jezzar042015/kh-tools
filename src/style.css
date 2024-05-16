@@ -152,3 +152,467 @@
     user-select: none;
   }
 }
+
+/* SideBar */
+
+#sidebar
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.836);
+  height: 100dvh;
+  min-width: 400px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* on phones */
+@media screen and (max-width: 767px)
+{
+  #sidebar
+  {
+    top: 300px;
+    height: calc(100dvh - 300px);
+    min-width: 0;
+  }
+}
+
+.parts-holder
+{
+  padding: 0px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll;
+}
+
+.meetings
+{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(245, 245, 245, 0.301);
+}
+
+.meeting
+{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.meeting-icon
+{
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.meeting-icon img
+{
+  height: 60px;
+
+}
+
+.parts-holder::-webkit-scrollbar
+{
+  width: 2px;
+}
+
+.active-meeting
+{
+  background: white;
+}
+
+/* PreviewInfo.vue */
+
+.preview
+{
+  padding: 15px;
+  background: transparent;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+}
+
+.preview-partname
+{
+  color: white;
+  font-size: 14px;
+}
+
+.time
+{
+  margin: 10px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.time span
+{
+  font-size: 9px;
+  color: white;
+}
+
+/* PopUp.vue */
+
+#popup-bg
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 36, 36, 0.795);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup
+{
+  height: fit-content;
+  width: fit-content;
+  max-width: 700px;
+  max-height: 500px;
+  background: rgb(241, 241, 241);
+  border-radius: 5px;
+  box-shadow: 0px 10px 39px 10px #cecece38;
+  padding: 20px;
+
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (max-width: 767px)
+{
+  .popup
+  {
+    width: 95%;
+  }
+}
+
+#start img
+{
+  height: 85%;
+  background-color: transparent;
+}
+
+.title
+{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  gap: 50px;
+}
+
+.message
+{
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.next
+{
+  padding: 5px 10px;
+  color: white;
+  background: rgb(115, 202, 115);
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 10px;
+  align-self: start;
+}
+
+.part-detail
+{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 0px 15px;
+}
+
+.part
+{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pop-participant
+{
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center
+{
+  text-align: center;
+}
+
+.next-duration
+{
+  margin: 10px;
+  border: 3px solid orange;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.next-duration span
+{
+  font-size: 12px;
+}
+
+.actions
+{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px 0px 15px;
+  gap: 10px;
+}
+
+.actions button
+{
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: lightgrey;
+  color: rgb(44, 42, 42);
+  cursor: pointer;
+  font-weight: 500;
+  transition: ease .3s;
+}
+
+.actions button:hover
+{
+  color: white;
+  background: #2d2da3
+}
+
+.shake
+{
+  animation: shake .5s infinite;
+}
+
+@keyframes shake
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+
+  25%
+  {
+    transform: rotate(-1deg);
+  }
+
+  50%
+  {
+    transform: rotate(1deg);
+  }
+
+  75%
+  {
+    transform: rotate(-1deg);
+  }
+
+  100%
+  {
+    transform: rotate(1deg);
+  }
+}
+
+/* TimerControls */
+
+.controls
+{
+  height: 100px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ctrl
+{
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #d3d3d317;
+}
+
+.ctrl:hover
+{
+  background: #ffffff4d;
+
+}
+
+#stop img
+{
+  height: 65%;
+}
+
+#restart img
+{
+  height: 65%;
+}
+
+#forward img
+{
+  height: 75%;
+}
+
+#backward img
+{
+  height: 75%;
+}
+
+/* on phones */
+@media screen and (max-width: 767px)
+{
+  .controls
+  {
+    position: absolute;
+    top: 95px;
+    height: auto;
+    padding: 5px 25px;
+
+    justify-content: center;
+  }
+
+  .ctrl
+  {
+    height: 55px;
+    width: 55px;
+    background: white;
+  }
+}
+
+/* TimerDisplay */
+#timer-display
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    gap: 20px;
+}
+
+.digits-holder
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.digits
+{
+    color: white;
+    font-weight: 700;
+    font-size: 15vw;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+}
+
+.colons
+{
+    font-weight: 700;
+    font-size: 8vw;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+/* on phones */
+@media screen and (max-width: 767px)
+{
+    .digits-holder
+    {
+        position: absolute;
+        top: 180px;
+    }
+
+    .colons
+    {
+        width: 30px;
+        font-size: 4vh;
+    }
+
+    .digits
+    {
+        font-weight: 700;
+        font-size: 17vw;
+        width: 12vw;
+    }
+}
+
+.warning
+{
+    background: orange;
+}
+
+.overtime
+{
+    animation: blinkingBackground 1s infinite;
+}
+
+@keyframes blinkingBackground
+{
+
+    50%
+    {
+        background-color: #ef0a1a;
+    }
+
+}

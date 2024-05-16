@@ -33,7 +33,7 @@
     import { computed, inject } from 'vue';
 
     const props = defineProps({
-        part: { type: Object, required: true }
+        part: { type: Object, }
     });
 
     const getDuration = computed(() => {

@@ -22,29 +22,24 @@
     </div>
 </template>
 
-<script setup>
-    import { computed, inject } from 'vue';
-
-    const view = inject('view');
-    const live = inject('live');
-    const start = inject('start');
-    const stop = inject('stop');
-    const restart = inject('restart');
-    const fwd = inject('fwd',);
-    const bwd = inject('bwd');
-
-    const setRestart = computed(() => {
-        return view.controls && live.seconds > 0 && !live.running;
-    })
-    const setStart = computed(() => {
-        return view.controls && !live.running;
-    })
-
-    const setStop = computed(() => {
-        return view.controls && live.running;
-    })
-    const setJumpers = computed(() => {
-        return view.controls && live.running;
-    })
-
+<script>
+    export default {
+        computed: {
+            setRestart() {
+                return this.view.controls && this.live.seconds > 0 && !this.live.running
+            },
+            setStart() {
+                return this.view.controls && !this.live.running
+            },
+            setStop() {
+                return this.view.controls && this.live.running
+            },
+            setJumpers() {
+                return this.view.controls && this.live.running
+            }
+        },
+        inject: [
+            'view', 'live', 'start', 'stop', 'restart', 'fwd', 'bwd'
+        ],
+    }
 </script>
